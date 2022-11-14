@@ -68,6 +68,11 @@ Route::group( ['middleware' => 'auth'], function()
      Route::get('equipments','EquipmentController@equipments');
      Route::post('new-equipment','EquipmentController@new_equipment');
      Route::get('maintenance','EquipmentController@maintenance');
+
+     //Vessels
+     Route::get('vessels','VesselController@vessels');
+     Route::post('new-vessel','VesselController@newVessel');
+     
     });
      //Request
      Route::post('change-pass','UserController@changepass');
